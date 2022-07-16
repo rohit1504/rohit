@@ -10,7 +10,7 @@ pipeline {
         
         stage('Terraform Initialize') {
             steps {
-                dir('/terraform2') {
+                dir('/var/jenkins_home/workspace/rohit/terraform2') {
                     // some block
                     sh 'terraform init'
                     sh 'terraform apply --auto-approve'
